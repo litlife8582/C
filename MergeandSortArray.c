@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&m);
     printf("Enter the number of array elements in array 2: ");
     scanf("%d",&n);
-    int arr1[m],arr2[n];
+    int arr1[100],arr2[100];
 
 
     //Accepting the elements
@@ -19,7 +19,7 @@ int main(){
 
 
     //Merging the arrays
-    int merged[m+n];
+    int merged[100];
     for(int i=0;i<m;i++){
         merged[i]=arr1[i];
     }
@@ -29,7 +29,7 @@ int main(){
 
 
     //Eliminating duplicate elements
-    int final[m+n];
+    int final[100];
     int index=0;
 
     for(int i=0;i<m+n;i++){
